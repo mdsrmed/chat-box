@@ -11,6 +11,11 @@
 		218C46F02AA3E4810018D270 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C46EF2AA3E4810018D270 /* ContentView.swift */; };
 		218C46F22AA3E4820018D270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218C46F12AA3E4820018D270 /* Assets.xcassets */; };
 		218C46F52AA3E4820018D270 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 218C46F42AA3E4820018D270 /* Preview Assets.xcassets */; };
+		218C46FD2AA3E6CB0018D270 /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C46FC2AA3E6CB0018D270 /* TitleRow.swift */; };
+		218C47002AA3EC8C0018D270 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C46FF2AA3EC8C0018D270 /* Message.swift */; };
+		218C47022AA3ED240018D270 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C47012AA3ED240018D270 /* MessageBubble.swift */; };
+		218C47042AA3F5850018D270 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C47032AA3F5850018D270 /* Extensions.swift */; };
+		218C47062AA3F8530018D270 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C47052AA3F8530018D270 /* MessageField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		218C46EF2AA3E4810018D270 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		218C46F12AA3E4820018D270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		218C46F42AA3E4820018D270 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		218C46FC2AA3E6CB0018D270 /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
+		218C46FF2AA3EC8C0018D270 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		218C47012AA3ED240018D270 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		218C47032AA3F5850018D270 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		218C47052AA3F8530018D270 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,13 @@
 		218C46EC2AA3E4810018D270 /* chat-box */ = {
 			isa = PBXGroup;
 			children = (
+				218C46FE2AA3EC720018D270 /* Models */,
+				218C46FB2AA3E6A70018D270 /* Components */,
 				218C46ED2AA3E4810018D270 /* chat_boxApp.swift */,
 				218C46EF2AA3E4810018D270 /* ContentView.swift */,
 				218C46F12AA3E4820018D270 /* Assets.xcassets */,
 				218C46F32AA3E4820018D270 /* Preview Content */,
+				218C47032AA3F5850018D270 /* Extensions.swift */,
 			);
 			path = "chat-box";
 			sourceTree = "<group>";
@@ -65,6 +78,24 @@
 				218C46F42AA3E4820018D270 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		218C46FB2AA3E6A70018D270 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				218C46FC2AA3E6CB0018D270 /* TitleRow.swift */,
+				218C47012AA3ED240018D270 /* MessageBubble.swift */,
+				218C47052AA3F8530018D270 /* MessageField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		218C46FE2AA3EC720018D270 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				218C46FF2AA3EC8C0018D270 /* Message.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				218C46F02AA3E4810018D270 /* ContentView.swift in Sources */,
+				218C47042AA3F5850018D270 /* Extensions.swift in Sources */,
+				218C47002AA3EC8C0018D270 /* Message.swift in Sources */,
+				218C47062AA3F8530018D270 /* MessageField.swift in Sources */,
+				218C47022AA3ED240018D270 /* MessageBubble.swift in Sources */,
 				218C46EE2AA3E4810018D270 /* chat_boxApp.swift in Sources */,
+				218C46FD2AA3E6CB0018D270 /* TitleRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
