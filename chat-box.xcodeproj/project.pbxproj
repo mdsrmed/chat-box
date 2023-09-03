@@ -16,6 +16,10 @@
 		218C47022AA3ED240018D270 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C47012AA3ED240018D270 /* MessageBubble.swift */; };
 		218C47042AA3F5850018D270 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C47032AA3F5850018D270 /* Extensions.swift */; };
 		218C47062AA3F8530018D270 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218C47052AA3F8530018D270 /* MessageField.swift */; };
+		21AA5DA52AA539580091F7E9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 21AA5DA42AA539580091F7E9 /* GoogleService-Info.plist */; };
+		21AA5DA82AA53A850091F7E9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 21AA5DA72AA53A850091F7E9 /* FirebaseFirestore */; };
+		21AA5DAA2AA53A850091F7E9 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 21AA5DA92AA53A850091F7E9 /* FirebaseFirestoreSwift */; };
+		21AA5DAC2AA53CE10091F7E9 /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AA5DAB2AA53CE10091F7E9 /* MessageManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,8 @@
 		218C47012AA3ED240018D270 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
 		218C47032AA3F5850018D270 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		218C47052AA3F8530018D270 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		21AA5DA42AA539580091F7E9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		21AA5DAB2AA53CE10091F7E9 /* MessageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21AA5DA82AA53A850091F7E9 /* FirebaseFirestore in Frameworks */,
+				21AA5DAA2AA53A850091F7E9 /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +76,8 @@
 				218C46F12AA3E4820018D270 /* Assets.xcassets */,
 				218C46F32AA3E4820018D270 /* Preview Content */,
 				218C47032AA3F5850018D270 /* Extensions.swift */,
+				21AA5DA42AA539580091F7E9 /* GoogleService-Info.plist */,
+				21AA5DAB2AA53CE10091F7E9 /* MessageManager.swift */,
 			);
 			path = "chat-box";
 			sourceTree = "<group>";
@@ -114,6 +124,10 @@
 			dependencies = (
 			);
 			name = "chat-box";
+			packageProductDependencies = (
+				21AA5DA72AA53A850091F7E9 /* FirebaseFirestore */,
+				21AA5DA92AA53A850091F7E9 /* FirebaseFirestoreSwift */,
+			);
 			productName = "chat-box";
 			productReference = 218C46EA2AA3E4810018D270 /* chat-box.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +156,9 @@
 				Base,
 			);
 			mainGroup = 218C46E12AA3E4810018D270;
+			packageReferences = (
+				21AA5DA62AA53A850091F7E9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 218C46EB2AA3E4810018D270 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,6 +175,7 @@
 			files = (
 				218C46F52AA3E4820018D270 /* Preview Assets.xcassets in Resources */,
 				218C46F22AA3E4820018D270 /* Assets.xcassets in Resources */,
+				21AA5DA52AA539580091F7E9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,6 +193,7 @@
 				218C47022AA3ED240018D270 /* MessageBubble.swift in Sources */,
 				218C46EE2AA3E4810018D270 /* chat_boxApp.swift in Sources */,
 				218C46FD2AA3E6CB0018D270 /* TitleRow.swift in Sources */,
+				21AA5DAC2AA53CE10091F7E9 /* MessageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +394,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21AA5DA62AA53A850091F7E9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21AA5DA72AA53A850091F7E9 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21AA5DA62AA53A850091F7E9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		21AA5DA92AA53A850091F7E9 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21AA5DA62AA53A850091F7E9 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 218C46E22AA3E4810018D270 /* Project object */;
 }
